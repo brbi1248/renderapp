@@ -64,7 +64,7 @@ def selecting():
 
 @app.route('/db_drop')
 def dropping():
-     conn = psycopg2.connect("postgres://brbi1248_db_user:cnQbJbn0p8hK9SFfSVJ10oBYUhFkMVEv@dpg-cgcug2m4dad6fr7dvs20-a/brbi1248_db")
+    conn = psycopg2.connect("postgres://brbi1248_db_user:cnQbJbn0p8hK9SFfSVJ10oBYUhFkMVEv@dpg-cgcug2m4dad6fr7dvs20-a/brbi1248_db")
     cur = conn.cursor()
     cur.execute('''DROP TABLE Basketball;''')
     conn.commit()
